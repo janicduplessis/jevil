@@ -58,7 +58,7 @@ npm run qa -- --provider clef --model clef-flash \
   "Open Accessibility, then Display & Text Size. Scroll to Smart Invert and verify that its switch is visible. Do not change any settings."
 ```
 
-`--model` defaults to `clef`. Clef also accepts images: `--vision` sends a screenshot of the current screen with each decision, which helps when the accessibility tree leaves out what the task needs to see. Each screenshot is saved as `screen-<step>.png`. Jev does not accept images, so `--vision` requires `--provider clef`.
+`--model` defaults to `clef`. Clef also accepts images. `--vision` (experimental) sends a screenshot of the current screen with each decision, which helps when the accessibility tree leaves out what the task needs to see. Each screenshot is saved as `screen-<step>.png`. Jev does not accept images, so `--vision` requires `--provider clef`.
 
 The cost estimate uses Workers AI's listed input price for the selected Clef model.
 
